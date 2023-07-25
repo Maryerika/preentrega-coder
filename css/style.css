@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
+
+
+/*---RESET--*/
+*{
+    margin: 0;
+    padding: 0;
+    /*--box-sizing: border-box; /*--quitar luego--*/
+}
+
+
+/*---GRID---*/
+.grid-container{
+    width: 100%; /*--me ocupara el 80% de la pantalla ojo con esto--*/
+    margin: 0 auto;
+    color: black;
+    font-size: 40px;
+    font-family: 'roboto';
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*--esto significa 3columnas de 1fr cada una (ANCHO)*/
+    grid-template-rows: 100px auto auto auto auto; /*--ALTO--*/
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer"
+    
+    ;
+}
+
+/*-----ENCABEZADO------*/
+
+.header{
+    background-color: ffffff;
+    grid-area: header;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    margin: 4px 4px;
+}
+
+.logo{
+    margin: 0px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descuento{
+    background-color: #389A98;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 50;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+.crear-cuenta ul{
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+
+.crear-cuenta ul li{
+    display: inline-block;
+}
+
+.crear-cuenta ul li a{
+    color: #389A98;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5px;
+    display: block;
+}
+
+/*-----MENU------*/
+
+.menu{
+    background-color: #389A98;
+    grid-area: nav;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+
+.menu ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+    display: block;
+}
+
+
+/*-----CONTENIDO------*/
+
+.contenido{
+    background-color: #ffffff;
+    grid-area: main;
+}
+
+h1 {
+    color: #389A98;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px;
+}
+
+.mensaje-inicio{
+    color: #181818;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px;
+    margin: 30px;
+}
+
+
+.section{
+    background-color: #E6BFE2;
+    display: flex;
+    justify-content: center;                                                                                                                                     
+    margin: 0px 5px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;                                                                                                                                     
+    margin: 10px 30px;
+}
+/*.card-img-top{
+    width: 0px;
+    height: 0px;
+}
+/*----ASIDE----*/
+
+.aside{
+    background-color: #badbda;
+    grid-area: aside;
+}
+
+
+/*-----FORM----*/
+
+.form{
+    background-color: #bcdde9;
+    grid-area: form;
+}
+
+/*-----FOOTER------*/
+
+.pie{
+    background-color: #ffffff;
+    grid-area: footer;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+footer div nav ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+footer div nav ul li a{
+    text-decoration: none;
+    color: #389A98;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+
+.img-pagos{
+    width: 50px;
+    height: 40px;
+} 
+
+
+.condiciones{
+    background-color: #E6BFE2;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.condiciones p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #389A98;
+    font-style: normal;
+    text-align: center;
+}
+
+.condiciones button{
+    background-color: #389A98;
+    border: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: ffffff;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.condiciones button:hover{
+    background-color: #166c6a;
+}
+
+@media screen and (max-width:950px){
+    .grid-container{
+        width:80%;
+        margin:0 auto;
+        grid-template-columns: 0.5fr 1fr 1fr; /*--esto significa 3columnas de 1fr cada una (ANCHO)*/
+        grid-template-rows: 200px 400px 150px 150px; /*--ALTO--*/
+        grid-template-areas: 
+        "nav header header"
+        "nav main main"
+        "aside aside aside"
+        "footer footer footer"
+    ;
+    }
+    
+} 
