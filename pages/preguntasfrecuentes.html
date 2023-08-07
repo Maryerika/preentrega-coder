@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Preguntas sobre Joyeria">
+    <meta name="keywords"
+        content="joyeria artesanal, artesania, joyeria personalizada, joyeria actual, joyeria, gold filled, silver, plata, accesorios, oro, brillo, hecho a mano">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -12,10 +15,10 @@
 </head>
 
 <body>
-    <div class="descuento">
-        <p>Envio gratis por compras mayores a 15.000$</>
-    </div>
     <header class="header">
+        <div class="descuento">
+            <p class="promocion">Envio gratis en todo el país por compras mayores a 30.000$</p>
+        </div>
         <div class="encabezado">
             <div>
                 <img src="../img/logotipo-06.png" class="logo" alt="Logo">
@@ -39,34 +42,43 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <section class="diymar contac-form">
             <h1>Preguntas Frecuentes</h1> <!--solo puede existir uno por documento-->
-            <p>
+            <h2>
                 ¿QUÉ ES GOLD FILLED?
-            </p>
-            <p>
-                El Oro Laminado o GOLD FILLED es un producto fabricado a partir de la fusión de varias capas de metal en
+            </h2>
+            <p class="preguntasfrecuentes">
+                El <strong>Oro Laminado o GOLD FILLED</strong> es un producto fabricado a partir de la fusión de varias
+                capas de metal en
                 una base de latón de joyería, donde finalmente se fusiona con una aleación de Oro mediante calor y
-                presión, en una proporción de un 5% o 1/20 de Oro por cada parte, lo que hace que sea de una EXCELENTE
-                CALIDAD.
+                presión, en una proporción de un 5% o 1/20 de Oro por cada parte, lo que hace que sea de una
+                <strong>EXCELENTE CALIDAD.</strong>
             </p>
-            <p>
-                El GOLD FILLED mantendrá su brillo dorado en el tiempo, dependiendo del uso que le des, es de fácil
-                cuidado y es HIPOALERGENICO.
+            <p class="preguntasfrecuentes">
+                El <span>GOLD FILLED</span> mantendrá su brillo dorado en el tiempo, dependiendo del uso que le des, es de fácil
+                cuidado y es <strong>HIPOALERGENICO.</strong>
             </p>
-            <p>
-                En la sección de TIPS y CUIDADOS te dejamos algunas recomendaciones para mantener en buen estado tus
-                Accesorios.
+            <p class="preguntasfrecuentes">
+                En la sección de <strong>TIPS DE CUIDADOS</strong> te dejamos algunas recomendaciones para mantener en buen estado tus
+                accesorios.
             </p>
-            <p>
+            <h5 class="preguntasfrecuentes">
                 ¡Ahora, luce y disfrutas tus Joyas!
-            </p>
+            </h5>
         </section>
     </main>
+    <aside class="aside">
+        <h4>Enterate de todas las novedades que tenemos para vos</h4>
+        <h5>¡Registrate ahora mismo y no te pierdas de nuestros descuentos, promociones y nuevos ingresos!</h5>
+        <form action="email">
+            <input type="email" placeholder="Email" class="input-email">
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+    </aside>
     <footer class="pie">
-        <div class="flex-footer">
-            <div>
-                <h3>NAVEGACIÓN</h3>
+        <div class="flex-container">
+            <div class="listas flex-nav">
+                <h5 class="label-footer">NAVEGACIÓN</h5>
                 <nav>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
@@ -77,29 +89,50 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <h3>MEDIOS DE PAGO</h3>
+            <div class="flex-pago">
+                <h5 class="label-footer">MEDIOS DE PAGO</h5>
                 <img src="../img/visa-icono.png" class="img-pagos" alt="visa">
                 <img src="../img/mastercard-icono.png" class="img-pagos" alt="master">
                 <img src="../img/american-express_icono.png" class="img-pagos" alt="american">
                 <img src="../img/mercado-pago-icono.png" class="img-pagos" alt="mercado-pago">
             </div>
-            <div>
-                <h3>CONTACTÁNOS</h3>
+            <div class="listas flex-contac">
+                <h5 class="label-footer">CONTACTÁNOS</h5>
+                <ul>
+                    <li class="list-contacto">
+                        <a href="" target="_blank"><img src="../img/icons-whatsapp.png" alt="whatsapp">
+                            +5491127783686</a>
+                    </li>
+                    <li class="list-contacto">
+                        <a href="" target="_blank"><img src="../img/icons-ubicación.png" alt="ubicacion"> Perón 3200,
+                            Almagro - CABA</a>
+                    </li>
+                    <li class="list-contacto">
+                        <a href="" target="_blank"><img src="../img/icons-email.png" alt="email">
+                            diymar.accesorios@gmail.com</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <h3>SIGUENOS</h3>
-                <a href="" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-                <a href="" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-                <a href="" target="_blank"><img src="../img/pinterest.png" alt="Logo Pinterest"></a>
+            <div class="listas flex-redes">
+                <h5 class="label-footer">SIGUENOS</h5>
+                <ul>
+                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-instagram-20.png"
+                                alt="Instagran"> Siguenos en Instagram</a></li>
+                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-facebook-20.png"
+                                alt="Facebook"> Siguenos
+                            en Facebook</a></li>
+                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-pinterest-20.png"
+                                alt="Pinterest"> Siguenos en Pinterest</a></li>
+                </ul>
             </div>
         </div>
         <div class="condiciones">
-            <p>Al navegar por este sitio aceptás el uso de cookies para agilizar tu experiencia de compra.</p>
+            <p class="cookies">Al navegar por este sitio <strong>aceptás el uso de cookies</strong> para agilizar tu
+                experiencia de
+                compra.</p>
             <button>Entendido</button>
         </div>
     </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
