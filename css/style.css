@@ -563,8 +563,6 @@ label {
     
 }
 
-
-
 /*---TIPOGRAFIAS ---*/
 
 body, ul, li, p, a, label, input, div {
@@ -598,7 +596,6 @@ h2{
 }
 
 
-
 .h2 {
     font-family: 'Roboto' sans-serif;
     font-size: 30px !important;
@@ -624,8 +621,7 @@ h3{
 }
 
 
-
-/* --- GENERAL --- */
+/* --- GENERAL PARA LA PAGINA --- */
 .logo {
     font-weight: 500 !important;
 }
