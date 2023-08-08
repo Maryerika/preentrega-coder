@@ -3,139 +3,187 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <meta name="descrition" content="Tips de cuidado">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Joyeria Artesanal">
     <meta name="keywords"
-        content="joyeria artesanal, artesania, joyeria personalizada, joyeria actual, joyeria, gold, silver, plata, accesorios, tips de cuidado, anillos, pulseras, collares, zarcillos">
+        content="joyeria artesanal, artesania, joyeria personalizada, joyeria actual, joyeria, gold, silver, plata, accesorios, anillos, pulseras, collares, zarcillos, hecho a mano">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>TIPS DE CUIDADO</title>
+    <title>DIY MAR Accesorios</title>
+    <link rel="apple-touch-icon" href=".././img/logotipo-06.png">
+    <link rel="shortcut icon" type="image/x-icon" href=".././img/logotipo-06.png">
+
+    <!-- Cargue el estilo de fuente después de representar los estilos de diseño -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="descuento">
-            <p class="promocion">Envio gratis en todo el país por compras mayores a 30.000$</p>
-        </div>
-        <div class="encabezado">
+    <!-- Inicio de navegación superior -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+        <div>
             <div>
-                <img src="../img/logotipo-06.png" class="logo" alt="Logo">
-            </div>
-            <div class="crear-cuenta">
-                <ul>
-                    <li><a href="../inicio">Iniciar sesión</a></li>
-                    <li> | </li>
-                    <li><a href="../cuenta">Crear cuenta</a></li>
-                </ul>
+                <p class="nav-header">Envio gratis en todo el país por compras mayores a 30.000$</p>
             </div>
         </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./accesorios.html">Accesorios</a></li>
-            <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="./tipsdecuidado.html">Tips de Cuidado</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
     </nav>
-    <main>
-        <section class="diymar contac-form">
-            <h1>Tips de cuidados</h1> <!--solo puede existir uno por documento-->
-            <h2>
-                Recomendaciones para cuidar tus joyas o accesorios
-            </h2>
-            <p class="recomendaciones">
-                La duración y garantía del brillo en tus Joyas o Accesorios, dependerá del uso que le des
-            </p>
-            <p class="recomendaciones">
-                Te dejamos algunas recomendaciones para mantenerlas en buen estado:
-            </p>
-            <ul class="recomendaciones">
-                <li>Evita el contacto con el agua o productos químicos como fragancias, cosméticos, cremas, jabón o
-                    alcohol.</li>
-                <li>No usar en pileta, playa o actividades deportivas.</li>
-                <li>Retira tus Joyas o Accesorios antes de dormir.</li>
-                <li>El roce entre ellas y objetos de diferentes metales o iguales puede deteriorarlas, ocasionar
-                    rayaduras o afectar su brillo.</li>
-                <li>Consérvalas en bolsitas por separado en un lugar seco, que no estén expuestas a la luz y al aire.
-                </li>
-                <li>Puedes limpiarlas con un paño (de algodón) suave y seco, para eliminar cualquier resto de PH que
-                    pueda acelerar su oxidación.</li>
-            </ul>
-        </section>
-    </main>
-    <aside class="aside">
-        <h4>Enterate de todas las novedades que tenemos para vos</h4>
-        <h5>¡Registrate ahora mismo y no te pierdas de nuestros descuentos, promociones y nuevos ingresos!</h5>
-        <form action="email">
-            <input type="email" placeholder="Email" class="input-email">
-            <input type="submit" value="Enviar" class="btn-enviar">
-        </form>
-    </aside>
-    <footer class="pie">
-        <div class="flex-container">
-            <div class="listas flex-nav">
-                <h5 class="label-footer">NAVEGACIÓN</h5>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./accesorios.html">Accesorios</a></li>
-                        <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-                        <li><a href="./tipsdecuidado.html">Tips de Cuidado</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+    <!-- Termino navegacion superior -->
+
+    <!-- NAV del Header con icono responsive -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="../index.html">
+                <img src="../img/logotipo-06.png">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tipsdecuidado.html">Tips de Cuidado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-            <div class="flex-pago">
-                <h5 class="label-footer">MEDIOS DE PAGO</h5>
-                <img src="../img/visa-icono.png" class="img-pagos" alt="visa">
-                <img src="../img/mastercard-icono.png" class="img-pagos" alt="master">
-                <img src="../img/american-express_icono.png" class="img-pagos" alt="american">
-                <img src="../img/mercado-pago-icono.png" class="img-pagos" alt="mercado-pago">
-            </div>
-            <div class="listas flex-contac">
-                <h5 class="label-footer">CONTACTÁNOS</h5>
-                <ul>
-                    <li class="list-contacto">
-                        <a href="" target="_blank"><img src="../img/icons-whatsapp.png" alt="whatsapp">
-                            +5491127783686</a>
+        </div>
+    </nav>
+    <!-- Termina nav -->
+
+    <!-- Inicio de contenido con parrafo -->
+    <section class="diymar contac-form">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1>Tips de cuidados</h1>
+                <p>
+                <h2>Recomendaciones para cuidar tus joyas o accesorios</h2>
+                </p>
+                <p>
+                    La duración y garantía del brillo en tus Joyas, dependerá del uso que le des.
+                </p>
+
+                <p>
+                    Te dejamos algunas recomendaciones para mantenerlas en buen estado:
+                </p>
+
+                <ul class="recomendaciones">
+                    <li>Evita el contacto con el agua o productos químicos como fragancias, cosméticos, cremas, jabón o
+                        alcohol.
                     </li>
-                    <li class="list-contacto">
-                        <a href="" target="_blank"><img src="../img/icons-ubicación.png" alt="ubicacion"> Perón 3200,
-                            Almagro - CABA</a>
+                    <li>No usar en pileta, playa o actividades deportivas.</li>
+                    <li>Retira tus Joyas o Accesorios antes de dormir.</li>
+                    <li>El roce entre ellas y objetos de diferentes metales o iguales puede deteriorarlas, ocasionar
+                        rayaduras o afectar su brillo.
                     </li>
-                    <li class="list-contacto">
-                        <a href="" target="_blank"><img src="../img/icons-email.png" alt="email">
-                            diymar.accesorios@gmail.com</a>
+                    <li>Consérvalas en bolsitas por separado en un lugar seco, que no estén expuestas a la luz y al
+                        aire.
                     </li>
-                </ul>
-            </div>
-            <div class="listas flex-redes">
-                <h5 class="label-footer">SIGUENOS</h5>
-                <ul>
-                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-instagram-20.png"
-                                alt="Instagran"> Siguenos en Instagram</a></li>
-                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-facebook-20.png"
-                                alt="Facebook"> Siguenos
-                            en Facebook</a></li>
-                    <li class="list-contacto"><a href="#" target="_blank"><img src="../img/icons-pinterest-20.png"
-                                alt="Pinterest"> Siguenos en Pinterest</a></li>
+                    <li>Puedes limpiarlas con un paño (de algodón) suave y seco, para eliminar cualquier resto de PH que
+                        pueda acelerar su oxidación.
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="condiciones">
-            <p class="cookies">Al navegar por este sitio <strong>aceptás el uso de cookies</strong> para agilizar tu
-                experiencia de
-                compra.</p>
-            <button>Entendido</button>
+    </section>
+    <!-- Fin de contenido con parrafo  -->
+
+    <!-- Inicio de Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Navegación</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="../index.html">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="../pages/accesorios.html">Accesorios</a></li>
+                        <li><a class="text-decoration-none" href="../pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a class="text-decoration-none" href="../pages/tipsdecuidado.html">Tips de Cuidado</a></li>
+                        <li><a class="text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Medios de Pago</h3>
+                    <div class="col-auto me-auto">
+                        <ul class="list-inline text-left footer-icons">
+                            <li class="list-inline-item">
+                                <img src="../img/visa-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/mastercard-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/american-express_icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/mercado-pago-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Contactanos</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Perón 3200, Almagro - CABA
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none"
+                                href="tel:5491127783686">+5491127783686</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none"
+                                href="mailto:diymar.accesorios@gmail.com">diymar.accesorios@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Siguenos</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <a class="text-light" href="https://www.instagram.com/accesoriosdiy.mar" target="_blank"><i
+                                    class="fab fa-instagram fa-sm fa-fw me-2"></i>accesoriosdiy.mar</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://facebook.com/Diy.mar Arte&Accesorios" target="_blank"><i
+                                    class="fab fa-facebook fa-sm fa-fw me-2"></i>Diy.mar Arte&Accesorios</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://https://www.pinterest.es/DIY.MAR Arte y Accesorios"
+                                target="_blank"><i class="fab fa-pinterest fa-sm fa-fw me-2"></i>Diy.mar
+                                Arte&Accesorios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- Fin footer -->
+    <!-- Fin  -->
 </body>
 
 </html>
