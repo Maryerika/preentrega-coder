@@ -1,0 +1,85 @@
+/* Estilos para la navegación superior */
+#nav_top {
+    @extend .navbar;
+    @extend .navbar-expand-lg !optional;
+    @extend .bg-dark;
+    @extend .navbar-light !optional;
+    @extend .d-none !optional;
+    @extend .d-lg-block !optional;
+  
+    > div {
+      > div {
+        p.nav-header {
+          /* Estilos para el texto de la navegación superior */
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  /* Estilos para la navegación principal */
+  #main_nav.navbar-collapse {
+    @extend .collapse !optional;
+    @extend .navbar-collapse;
+    @extend .flex-fill;
+    @extend .d-lg-flex !optional;
+    @extend .justify-content-lg-between !optional;
+    align-self: center;
+  
+    > div {
+      /* Estilos para el contenido de la navegación principal */
+      ul.navbar-nav {
+        @extend .nav !optional;
+        @extend .d-flex;
+        @extend .justify-content-between !optional;
+        @extend .mx-lg-auto !optional;
+  
+        > li.nav-item {
+          /* Estilos para los elementos de la lista de navegación */
+          margin-right: 10px;
+  
+          > a.nav-link {
+            /* Estilos para los enlaces de navegación */
+            color: #333;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+  
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /* Estilos para el botón de navegación */
+  button.navbar-toggler.border-0 {
+    @extend .navbar-toggler;
+  
+    > span.navbar-toggler-icon {
+      /* Estilos para el ícono del botón de navegación */
+      background-color: #333;
+  
+      &:before {
+        background-color: #fff;
+      }
+    }
+  }
+  
+  /* Estilos para la sección de contenido */
+  .container.d-flex.justify-content-between.align-items-center {
+    /* Estilos para el contenedor de la sección */
+    .navbar-brand.logo.align-self-center {
+      /* Estilos para el logo en la barra de navegación */
+      img {
+        /* Estilos para la imagen del logo */
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
