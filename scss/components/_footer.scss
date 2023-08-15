@@ -1,0 +1,68 @@
+/* Estilos para el pie de página */
+footer#tempaltemo_footer.bg-dark {
+    /* Estilos para el contenedor del pie de página */
+    .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    /* Estilos para las filas del pie de página */
+    .row {
+      > div.col-md-3.pt-5 {
+        /* Estilos para las columnas del pie de página */
+        padding-top: 30px;
+  
+        h3.h3.text-light.border-bottom.pb-3.border-light {
+          /* Estilos para los encabezados en las columnas */
+          color: #fff;
+          font-size: 24px;
+          font-weight: 600;
+          border-bottom: 2px solid #fff;
+          padding-bottom: 15px;
+        }
+  
+        /* Estilos para las listas en las columnas */
+        ul.list-unstyled.text-light.footer-link-list {
+          margin-top: 20px;
+          list-style: none;
+  
+          li {
+            margin-bottom: 10px;
+  
+            /* Estilos para los enlaces en la lista */
+            a.text-decoration-none {
+              color: #b0b0b0;
+              text-decoration: none;
+              font-weight: 400;
+              transition: color 0.3s ease-in-out;
+  
+              &:hover {
+                color: $color-terciario;
+              }
+  
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+  
+        /* Estilos para las imágenes en la lista de iconos */
+        .footer-icons {
+          list-style: none;
+          padding-left: 0;
+          display: flex;
+  
+          li.list-inline-item {
+            margin-right: 10px;
+  
+            img {
+              width: inherit;
+              height: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+  
