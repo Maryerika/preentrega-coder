@@ -3,106 +3,183 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Joyeria Artesanal">
+    <meta name="keywords"
+        content="joyeria artesanal, artesania, joyeria personalizada, joyeria actual, joyeria, gold, silver, plata, accesorios, anillos, pulseras, collares, zarcillos, hecho a mano">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>PREGUNTAS FRECUENTES</title>
+    <title>DIY MAR Accesorios</title>
+    <link rel="apple-touch-icon" href="../img/logotipo-06.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logotipo-06.png">
+
+    <!-- Cargue el estilo de fuente después de representar los estilos de diseño -->
+    <link rel="stylesheet" href="../css/fontawesome.css"> 
+
+    <!-- Link correspondientes a mis estilos creados desde scss
+    <link rel="stylesheet" href="./css/estilos.css"> -->
 </head>
 
 <body>
-    <div class="descuento">
-        <p>Envio gratis por compras mayores a 15.000$</>
-    </div>
-    <header class="header">
-        <div class="encabezado">
+    <!-- Inicio de navegación superior -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+        <div>
             <div>
-                <img src="../img/logotipo-06.png" class="logo" alt="Logo">
-            </div>
-            <div class="crear-cuenta">
-                <ul>
-                    <li><a href="../inicio">Iniciar sesión</a></li>
-                    <li> | </li>
-                    <li><a href="../cuenta">Crear cuenta</a></li>
-                </ul>
+                <p class="nav-header">Envio gratis en todo el país por compras mayores a 30.000$</p>
             </div>
         </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./accesorios.html">Accesorios</a></li>
-            <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="./tipsdecuidado.html">Tips de Cuidado</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
     </nav>
-    <main>
-        <section>
-            <h1>Preguntas Frecuentes</h1> <!--solo puede existir uno por documento-->
-            <p>
-                ¿QUÉ ES GOLD FILLED?
-            </p>
-            <p>
-                El Oro Laminado o GOLD FILLED es un producto fabricado a partir de la fusión de varias capas de metal en
-                una base de latón de joyería, donde finalmente se fusiona con una aleación de Oro mediante calor y
-                presión, en una proporción de un 5% o 1/20 de Oro por cada parte, lo que hace que sea de una EXCELENTE
-                CALIDAD.
-            </p>
-            <p>
-                El GOLD FILLED mantendrá su brillo dorado en el tiempo, dependiendo del uso que le des, es de fácil
-                cuidado y es HIPOALERGENICO.
-            </p>
-            <p>
-                En la sección de TIPS y CUIDADOS te dejamos algunas recomendaciones para mantener en buen estado tus
-                Accesorios.
-            </p>
-            <p>
-                ¡Ahora, luce y disfrutas tus Joyas!
-            </p>
-        </section>
-    </main>
-    <footer class="pie">
-        <div class="flex-footer">
-            <div>
-                <h3>NAVEGACIÓN</h3>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./accesorios.html">Accesorios</a></li>
-                        <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-                        <li><a href="./tipsdecuidado.html">Tips de Cuidado</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+    <!-- Termino navegacion superior -->
+
+    <!-- NAV del Header con icono responsive -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="../index.html">
+                <img src="../img/logotipo-06.png">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tipsdecuidado.html">Tips de Cuidado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-            <div>
-                <h3>MEDIOS DE PAGO</h3>
-                <img src="../img/visa-icono.png" class="img-pagos" alt="visa">
-                <img src="../img/mastercard-icono.png" class="img-pagos" alt="master">
-                <img src="../img/american-express_icono.png" class="img-pagos" alt="american">
-                <img src="../img/mercado-pago-icono.png" class="img-pagos" alt="mercado-pago">
-            </div>
-            <div>
-                <h3>CONTACTÁNOS</h3>
-            </div>
-            <div>
-                <h3>SIGUENOS</h3>
-                <a href="" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-                <a href="" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-                <a href="" target="_blank"><img src="../img/pinterest.png" alt="Logo Pinterest"></a>
+                </div>
             </div>
         </div>
-        <div class="condiciones">
-            <p>Al navegar por este sitio aceptás el uso de cookies para agilizar tu experiencia de compra.</p>
-            <button>Entendido</button>
+    </nav>
+    <!-- Termina nav -->
+
+    <!-- Inicio de contenido con parrafo -->
+    <section class="diymar contac-form">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1>Preguntas Frecuentes</h1>
+                <p>
+                    <h2>¿QUÉ ES GOLD FILLED?</h2>
+                </p>
+                <p>
+                    El <strong>Oro Laminado o Gold Filled</strong> es un producto fabricado a partir de la fusión de varias capas de
+                    metal en una base de latón de joyería, donde finalmente se fusiona con una aleación de Oro mediante
+                    calor y presión, en una proporción de un 5% o 1/20 de Oro por cada parte, lo que hace que sea de una
+                    excelente calidad.           
+                </p>
+                <p>
+                    El <strong>Gold Filled</strong> mantendrá su brillo dorado en el tiempo, dependiendo del uso que le des, es de fácil
+                    cuidado y es <strong>Hipoalergénico</strong>.
+                </p>
+                <p>
+                    En la sección de <strong>Tips de Cuidados</strong> te dejamos algunas recomendaciones para mantener en buen estado
+                    tus accesorios.
+                </p>
+                <p>
+                    <strong>¡Ahora, luce y disfrutas tus Joyas!</strong>
+                </p>    
+            </div>
+        </div>
+    </section>
+    <!-- Fin de contenido con parrafo  -->
+
+    <!-- Inicio de Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Navegación</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="../index.html">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="../pages/accesorios.html">Accesorios</a></li>
+                        <li><a class="text-decoration-none" href="../pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a class="text-decoration-none" href="../pages/tipsdecuidado.html">Tips de Cuidado</a></li>
+                        <li><a class="text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Medios de Pago</h3>
+                    <div class="col-auto me-auto">
+                        <ul class="list-inline text-left footer-icons">
+                            <li class="list-inline-item">
+                                <img src="../img/visa-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/mastercard-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/american-express_icono.png" style="width: inherit; height: inherit">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="../img/mercado-pago-icono.png" style="width: inherit; height: inherit">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Contactanos</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Perón 3200, Almagro - CABA
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none"
+                                href="tel:5491127783686">+5491127783686</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="navbar-sm-brand text-light text-decoration-none"
+                                href="mailto:diymar.accesorios@gmail.com">diymar.accesorios@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 pt-5">
+                    <h3 class="h3 text-light border-bottom pb-3 border-light">Siguenos</h3>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <a class="text-light" href="https://www.instagram.com/accesoriosdiy.mar" target="_blank"><i
+                                    class="fab fa-instagram fa-sm fa-fw me-2"></i>accesoriosdiy.mar</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://facebook.com/Diy.mar Arte&Accesorios" target="_blank"><i
+                                    class="fab fa-facebook fa-sm fa-fw me-2"></i>Diy.mar Arte&Accesorios</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://https://www.pinterest.es/DIY.MAR Arte y Accesorios"
+                                target="_blank"><i class="fab fa-pinterest fa-sm fa-fw me-2"></i>Diy.mar
+                                Arte&Accesorios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- Fin footer -->
+    <!-- Fin  -->
 </body>
 
 </html>

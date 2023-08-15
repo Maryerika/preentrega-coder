@@ -1,0 +1,76 @@
+/* Estilos para la sección de Contacto */
+section.diymar.contac-form {
+    
+  
+    .row.text-center.py-3 {
+      
+  
+      .col-lg-6.m-auto {
+        
+  
+        h1 {
+          
+        }
+  
+        p {
+          
+  
+          h2 {
+            
+          }
+        }
+      }
+    }
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .container.py-5 {
+    
+  
+    .row.py-5 {
+      
+  
+      form.col-md-9.m-auto {
+        
+  
+        .row {
+          
+  
+          .form-group.col-md-6.mb-3 {
+            
+  
+            label {
+              
+            }
+  
+            input.form-control.mt-1,
+            input.form-control.mt-1[type="number"],
+            input.form-control.mt-1[type="email"] {
+              
+            }
+          }
+  
+          .mb-3 {
+            
+  
+            label {
+              
+            }
+  
+            textarea.form-control.mt-1 {
+              
+            }
+          }
+  
+          .col.text-end.mt-2 {
+            
+  
+            button.btn.btn-success.btn-lg.px-3 {
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  
