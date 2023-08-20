@@ -8,8 +8,7 @@
   }
   
   .carousel-inner {
-    
-  
+      
     .carousel-item {
       
   
@@ -32,8 +31,18 @@
   }
   
   /* Estilos para la sección de contenido */
-  section.diymar.contac-form {
-    
+  section{
+    .diymar{
+      background-image: url(../img/textura-diamante.png);
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+    .contac-form{
+      padding: 30px;
+      margin: 0px;
+    }
   
     .row.text-center.py-3 {
       
@@ -42,11 +51,23 @@
         
   
         h1 {
-          
+          background: linear-gradient(#389A98, #717a79);
+	        color: transparent;
+	        background-clip: text;
+	        -webkit-background-clip: text;
+	        -moz-background-clip: text;
+	        animation: text 5s linear infinite;
+	        text-align: center;
+	        font-size: 50px !important;
+	        font-weight: 400 !important;
+	        font-family: 'Roboto' sans-serif;
+	        padding: 10px;
         }
   
         p {
-          
+          font-family: 'Roboto';
+          font-size: 18px !important;
+          font-weight: 300 !important;
         }
       }
     }
@@ -69,7 +90,9 @@
             
   
             a {
-              
+              font-family: 'Roboto';
+              font-size: 18px !important;
+              font-weight: 300 !important;
             }
   
             .card-body {

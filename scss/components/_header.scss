@@ -1,85 +1,69 @@
-/* Estilos para la navegación superior */
-#nav_top {
-    @extend .navbar;
-    @extend .navbar-expand-lg !optional;
-    @extend .bg-dark;
-    @extend .navbar-light !optional;
-    @extend .d-none !optional;
-    @extend .d-lg-block !optional;
-  
-    > div {
-      > div {
+header {
+  nav.navbar.navbar-expand-lg.bg-dark.navbar-light.d-none.d-lg-block#nav_top {
+    div {
+      div {
         p.nav-header {
-          /* Estilos para el texto de la navegación superior */
-          color: #ffffff;
-          font-size: 16px;
-          font-weight: 500;
-          text-align: center;
+                font-size: 50px;
+                font-family: 'Roboto';
+                color: #ffffff;
+                font-style: normal;
+                font-weight: 60;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
         }
       }
     }
   }
   
-  /* Estilos para la navegación principal */
-  #main_nav.navbar-collapse {
-    @extend .collapse !optional;
-    @extend .navbar-collapse;
-    @extend .flex-fill;
-    @extend .d-lg-flex !optional;
-    @extend .justify-content-lg-between !optional;
-    align-self: center;
-  
-    > div {
-      /* Estilos para el contenido de la navegación principal */
-      ul.navbar-nav {
-        @extend .nav !optional;
-        @extend .d-flex;
-        @extend .justify-content-between !optional;
-        @extend .mx-lg-auto !optional;
-  
-        > li.nav-item {
-          /* Estilos para los elementos de la lista de navegación */
-          margin-right: 10px;
-  
-          > a.nav-link {
-            /* Estilos para los enlaces de navegación */
-            color: #333;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-  
-            &:hover {
-              color: #007bff;
+  nav.navbar.navbar-expand-lg.navbar-light.bg- {
+    .container-fluid {
+      a.navbar-brand.text-success.logo.h1.align-self-center[href="./index.html"] {
+        img[src="./img/logotipo-06.png"] {
+          // ... (atributos)
+        }
+      }
+      
+      button.navbar-toggler[type="button"][data-bs-toggle="collapse"][data-bs-target="#navbarSupportedContent"][aria-controls="navbarSupportedContent"][aria-expanded="false"][aria-label="Toggle navigation"] {
+        span.navbar-toggler-icon {
+          
+        }
+      }
+      
+      .collapse.navbar-collapse#navbarSupportedContent {
+        ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+          li.nav-item {
+            a.nav-link.active[aria-current="page"][href="./index.html"] {
+              
+            }
+          }
+          
+          li.nav-item {
+            a.nav-link[href="./pages/accesorios.html"] {
+              
+            }
+          }
+          
+          li.nav-item {
+            a.nav-link[href="./pages/preguntasfrecuentes.html"] {
+              
+            }
+          }
+          
+          li.nav-item {
+            a.nav-link[href="./pages/tipsdecuidado.html"] {
+             
+            }
+          }
+          
+          li.nav-item {
+            a.nav-link[href="./pages/contacto.html"] {
+              
             }
           }
         }
       }
     }
   }
-  
-  /* Estilos para el botón de navegación */
-  button.navbar-toggler.border-0 {
-    @extend .navbar-toggler;
-  
-    > span.navbar-toggler-icon {
-      /* Estilos para el ícono del botón de navegación */
-      background-color: #333;
-  
-      &:before {
-        background-color: #fff;
-      }
-    }
-  }
-  
-  /* Estilos para la sección de contenido */
-  .container.d-flex.justify-content-between.align-items-center {
-    /* Estilos para el contenedor de la sección */
-    .navbar-brand.logo.align-self-center {
-      /* Estilos para el logo en la barra de navegación */
-      img {
-        /* Estilos para la imagen del logo */
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
+}

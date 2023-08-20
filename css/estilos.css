@@ -21,6 +21,13 @@
   background-color: #ffffff;
   grid-area: header; }
 
+.bi-star-fill {
+  color: #f2f245; }
+
+/* Cambiar el tamaño del ícono */
+.bi-star-fill {
+  font-size: 24px; }
+
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -416,18 +423,31 @@ div {
   font-weight: 300 !important; }
 
 h1 {
-  color: #389A98;
+  background: linear-gradient(#389A98, #717a79);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
   text-align: center;
-  font-size: 40px;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-size: 50px !important;
+  font-weight: 400 !important;
+  font-family: 'Roboto' sans-serif;
   padding: 10px; }
 
-.h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px !important;
-  font-weight: 200 !important; }
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
 
+/*.h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px !important;
+	font-weight: 200 !important;
+	font-style: normal;
+}
+*/
 h2 {
   color: #000000;
   text-align: center;
@@ -467,7 +487,7 @@ h3 {
 .text-light {
   color: #cfd6e1 !important; }
 
-.bg-dark, #nav_top {
+.bg-dark {
   background-color: #389A98 !important; }
 
 .bg-light {
@@ -502,7 +522,7 @@ h3 {
   #main_nav a:hover {
     color: #69bb7e; }
 
-#main_nav .navbar .nav-icon, #main_nav #nav_top .nav-icon {
+#main_nav .navbar .nav-icon {
   margin-right: 20px; }
 
 #zay-hero-carousel {
@@ -614,7 +634,6 @@ h3 {
   padding-top: 10px; }
 
 #tempaltemo_footer ul.footer-icons li {
-  width: 2.6em;
   height: 2.6em;
   line-height: 2.6em; }
   #tempaltemo_footer ul.footer-icons li:hover {
@@ -627,7 +646,7 @@ h3 {
 #tempaltemo_footer .border-light {
   border-color: #2d343f !important; }
 
-.flex-fill ul li a, #main_nav.navbar-collapse ul li a {
+.flex-fill ul li a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -655,73 +674,117 @@ div.desc {
   float: left;
   width: 24.99999%; }
 
-/* Estilos para la navegación superior */
-#nav_top > div > div p.nav-header {
-  /* Estilos para el texto de la navegación superior */
+header nav.navbar.navbar-expand-lg.bg-dark.navbar-light.d-none.d-lg-block#nav_top div div p.nav-header {
+  font-size: 50px;
+  font-family: 'Roboto';
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center; }
-
-/* Estilos para la navegación principal */
-#main_nav.navbar-collapse {
-  align-self: center; }
-  #main_nav.navbar-collapse > div {
-    /* Estilos para el contenido de la navegación principal */ }
-    #main_nav.navbar-collapse > div ul.navbar-nav > li.nav-item {
-      /* Estilos para los elementos de la lista de navegación */
-      margin-right: 10px; }
-      #main_nav.navbar-collapse > div ul.navbar-nav > li.nav-item > a.nav-link {
-        /* Estilos para los enlaces de navegación */
-        color: #333;
-        font-weight: 500;
-        text-decoration: none;
-        transition: color 0.3s ease-in-out; }
-        #main_nav.navbar-collapse > div ul.navbar-nav > li.nav-item > a.nav-link:hover {
-          color: #007bff; }
-
-/* Estilos para el botón de navegación */
-button.border-0.navbar-toggler > span.navbar-toggler-icon {
-  /* Estilos para el ícono del botón de navegación */
-  background-color: #333; }
-  button.border-0.navbar-toggler > span.navbar-toggler-icon:before {
-    background-color: #fff; }
-
-/* Estilos para la sección de contenido */
-.container.d-flex.justify-content-between.align-items-center, #main_nav.navbar-collapse > div ul.container.align-items-center.navbar-nav {
-  /* Estilos para el contenedor de la sección */ }
-  .container.d-flex.justify-content-between.align-items-center .navbar-brand.logo.align-self-center, #main_nav.navbar-collapse > div ul.container.align-items-center.navbar-nav .navbar-brand.logo.align-self-center {
-    /* Estilos para el logo en la barra de navegación */ }
-    .container.d-flex.justify-content-between.align-items-center .navbar-brand.logo.align-self-center img, #main_nav.navbar-collapse > div ul.container.align-items-center.navbar-nav .navbar-brand.logo.align-self-center img {
-      /* Estilos para la imagen del logo */
-      max-width: 100%;
-      height: auto; }
+  font-style: normal;
+  font-weight: 60;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
 
 /* Estilos para el carrusel */
 /* Estilos para la sección de contenido */
+section .diymar {
+  background-image: url(../img/textura-diamante.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+section .contac-form {
+  padding: 30px;
+  margin: 0px; }
+
+section .row.text-center.py-3 .col-lg-6.m-auto h1 {
+  background: linear-gradient(#389A98, #717a79);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+  text-align: center;
+  font-size: 50px !important;
+  font-weight: 400 !important;
+  font-family: 'Roboto' sans-serif;
+  padding: 10px; }
+
+section .row.text-center.py-3 .col-lg-6.m-auto p {
+  font-family: 'Roboto';
+  font-size: 18px !important;
+  font-weight: 300 !important; }
+
 /* Estilos para la sección de galería */
-/* Estilos para la sección de contenido con párrafo */
-/* Estilos para la galería de fotos */
+section.bg-light .container.py-5 .row .col-12.col-md-4.mb-4 .card.h-100 a {
+  font-family: 'Roboto';
+  font-size: 18px !important;
+  font-weight: 300 !important; }
+
+/* Estilos para la sección de contenido */
+section.diymar {
+  background-image: url(../img/textura-diamante.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  margin: 0; }
+  section.diymar .row.text-center.py-3 .col-lg-6.m-auto h1 {
+    color: #389A98;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px; }
+  section.diymar .row.text-center.py-3 .col-lg-6.m-auto p {
+    font-family: 'Roboto';
+    font-size: 18px !important;
+    font-weight: 300 !important; }
+
+section.contac-form {
+  padding: 30px;
+  margin: 0; }
+  section.contac-form .row.text-center.py-3 .col-lg-6.m-auto h1 {
+    color: #389A98;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px; }
+  section.contac-form .row.text-center.py-3 .col-lg-6.m-auto p {
+    font-family: 'Roboto';
+    font-size: 18px !important;
+    font-weight: 300 !important; }
+
 /* Estilos para la sección de Preguntas Frecuentes */
-section.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto h1 {
+.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto h1 {
+  font-size: 2rem;
   color: #389A98;
   text-align: center;
-  font-size: 40px;
   font-family: 'Roboto';
   font-style: normal;
   padding: 10px; }
 
-section.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto p {
+.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  padding: 8px; }
+
+.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto strong {
+  font-weight: bold; }
+
+.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto p {
+  margin-bottom: 1rem;
   font-family: 'Roboto';
   font-size: 18px !important;
   font-weight: 300 !important; }
-  section.diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto p h2 {
-    color: #000000;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    padding: 8px; }
+  .diymar.contac-form .row.text-center.py-3 .col-lg-6.m-auto p:last-child {
+    margin-bottom: 0; }
 
 /* Estilos para la sección de Tips de cuidados */
 /* Estilos para la sección de Contacto */
@@ -770,7 +833,6 @@ footer#tempaltemo_footer.bg-dark {
           width: inherit;
           height: inherit; }
 
-/*@import "./base/fontawesome.scss";*/
 /* Extra large devices (large desktops, 1200px and up) */
 /* ... */
 /* Large devices (desktops, 992px and up) */
