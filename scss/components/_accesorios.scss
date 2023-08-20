@@ -1,70 +1,56 @@
-/* Estilos para la sección de contenido con párrafo */
-section.diymar.contac-form {
+/* Estilos para la sección de contenido */
+section {
+  &.diymar {
+    background-image: url(../img/textura-diamante.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 0;
     
-  
     .row.text-center.py-3 {
-      
-  
       .col-lg-6.m-auto {
-        
-  
         h1 {
-          
+          color: $color-primario;
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Roboto';
+          font-style: normal;
+          padding: 10px;
         }
-  
+
         p {
-          
-  
-          h2 {
-            
-          }
+          font-family: 'Roboto';
+          font-size: 18px !important;
+          font-weight: 300 !important;
         }
       }
     }
   }
-  
-  /* Estilos para la galería de fotos */
-  .container.py-5 {
-    
-  
-    .row {
-      
-  
-      .col-lg-12 {
-        
-  
-        .row {
-          
-  
-          .col-md-3 {
-            
-  
-            .card.mb-4.product-wap.rounded-0 {
-              
-  
-              .card.rounded-0 {
-                
-  
-                img.card-img.rounded-0.img-fluid {
-                  
-                }
-              }
-  
-              .card-body {
-                
-  
-                p {
-                  
-  
-                  p.card-text {
-                    
-                  }
-                }
-              }
-            }
-          }
+
+  &.contac-form {
+    padding: 30px;
+    margin: 0;
+
+    .row.text-center.py-3 {
+      .col-lg-6.m-auto {
+        h1 {
+          color: $color-primario;
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Roboto';
+          font-style: normal;
+          padding: 10px;
+        }
+
+        p {
+          font-family: 'Roboto';
+          font-size: 18px !important;
+          font-weight: 300 !important;
         }
       }
     }
   }
-  
+}
+
